@@ -32,7 +32,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: "../../dist",
                     src: "bundle.js",
-                    dest: "../../dist",
+                    dest: "../dist",
                     ext: ".min.js"
                 }]
             }
