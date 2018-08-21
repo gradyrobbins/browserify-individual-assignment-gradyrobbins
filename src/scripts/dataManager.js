@@ -52,6 +52,11 @@ APIObject.saveTask = (tasks) => {
    })
    .then(response => response.json())
 }
+APIObject.deleteTask = (ID) => {
+    return fetch(`http://localhost:8088/tasks/${ID}`, {
+        method: "DELETE"
+    }).then(response => response.json())
+}
 APIObject.getNewsArticles = (ID) => {
     return fetch(`http://localhost:8088/news?userId=${ID}`)
         .then(response => response.json())
