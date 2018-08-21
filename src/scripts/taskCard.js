@@ -1,6 +1,5 @@
 // Grady R.
 // this file builds an HTML representation of how the tasks are to be displayed on the DOM.
-// needs to include a "check complete" button; boolean true/false allowing for filtering
 // also be aware of event bubbling, verify event listener works on dynamically generated list item
 console.log("taskCard.js")
 
@@ -13,8 +12,7 @@ const taskEntry = (item) => {
             <p>
             Description: ${item.content}
             </p>
-            <button class="task__complete" id="task_complete--${item.id}">Click here when task complete</button>
-            <button class="task__edit" id="edit--${item.id}">Click to Edit this task</button>
+            <button class="task__delete" id="edit--${item.id}">Click to Delete this place from the list</button>
         </div>
     `
 }
