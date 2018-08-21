@@ -19,7 +19,6 @@ function taskFunction(){
         const newEntry = {
             title: document.querySelector("#taskName").value,
             content: document.querySelector("#taskDescription").value,
-            date: document.querySelector("#expectedCompletionDate").value,
         }
         
         // POST to API .then render to DOM

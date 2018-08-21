@@ -8,25 +8,19 @@ const TaskFormManager = Object.create(null, {
         value: () => {
             document.querySelector("#taskName").value = ""
             document.querySelector("#taskDescription").value = ""
-            document.querySelector("#expectedCompletionDate").value = ""
         }
     },
     renderTaskForm: {
         value: () => {
             return `
                 <fieldset>
-                    <label for="taskName">Task Name:</label>
+                    <label for="taskName">Name a favorite Place:</label>
                     <input required type="text" id="taskName">
                 </fieldset>
 
                 <fieldset>
-                    <label for="taskDescription">Task Description:</label>
+                    <label for="taskDescription">Why is this place special to you?</label>
                     <input required type="text" id="taskDescription">
-                </fieldset>
-
-                <fieldset>
-                    <label for="expectedCompletionDate">Expected Completion Date: </label>
-                    <input type="date" id="expectedCompletionDate"></textarea>
                 </fieldset>
 
                 <button id="completedTask">Click here to save this task to the API</button>
