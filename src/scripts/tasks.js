@@ -2,9 +2,9 @@
 // this file should use an event listener to post the field values to the API
 console.log("tasks.js")
 const $ = require("jquery")
-const TaskFormManager = require("./tasks/tasksForm")
-const DataManager = require("./../tasks/dataManager")
-const taskEntry = require("./../tasks/tasks/taskCard")
+const TaskFormManager = require("./tasksForm")
+const DataManager = require("./dataManager")
+const taskEntry = require("./taskCard")
 
 function taskFunction(){
 
